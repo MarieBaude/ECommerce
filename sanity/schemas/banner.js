@@ -26,6 +26,21 @@ export default {
             title: 'Desc',
             type: 'string',
         },
-       
+        {
+            name: 'smallText',
+            title: 'SmallText',
+            type: 'string',
+        },
+        {
+            name: 'midText',
+            title: 'MidText',
+            type: 'string',
+        },
+        {
+            name: 'largeText1',
+            title: 'LargeText1',
+            type: 'string',
+        },
+        
     ],
 }
