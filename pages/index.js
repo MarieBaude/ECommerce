@@ -4,12 +4,12 @@ const Home = () => {
   return (
     <>
       HeroBanner
-      <div>
+      <div className='products-heading'>
         <h2>Title</h2>
         <p>Lorem</p>
       </div>
 
-      <div>
+      <div className='products-container'>
         {['Product 1', 'Product 2'].map(
           (product) => product)}
       </div>
