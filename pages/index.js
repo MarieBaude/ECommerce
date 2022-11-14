@@ -3,7 +3,7 @@ import { Product, FooterBanner, HeroBanner } from '../components';
 
 const Home = () => {
   return (
-    <>
+    <div>
       HeroBanner
       <div className='products-heading'>
         <h2>Title</h2>
@@ -16,7 +16,7 @@ const Home = () => {
       </div>
 
       Footer
-    </>
+    </div>
   );
 
   // export const getServerSideProps = async () => {
