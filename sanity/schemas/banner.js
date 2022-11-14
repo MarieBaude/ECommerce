@@ -16,5 +16,16 @@ export default {
             title: 'ButtonText',
             type: 'string',
         },
+        {
+            name: 'product',
+            title: 'Product',
+            type: 'string',
+        },
+        {
+            name: 'desc',
+            title: 'Desc',
+            type: 'string',
+        },
+       
     ],
 }
