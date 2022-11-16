@@ -6,15 +6,15 @@ import { client } from '../lib/client';
 const Home = ({ products, bannerData }) => {
   return (
     <div>
-      <HeroBanner />
+      <HeroBanner heroBanner={[1]} />
       <div className='products-heading'>
         <h2>Title</h2>
         <p>Lorem</p>
       </div>
 
       <div className='products-container'>
-        {['Product 1', 'Product 2'].map(
-          (product) => product)}
+        {products?.map(
+          (product) => product.name)}
       </div>
 
       <FooterBanner />
