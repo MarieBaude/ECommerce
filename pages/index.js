@@ -4,7 +4,7 @@ import { Product, FooterBanner, HeroBanner } from '../components';
 const Home = () => {
   return (
     <div>
-      HeroBanner
+      <HeroBanner />
       <div className='products-heading'>
         <h2>Title</h2>
         <p>Lorem</p>
@@ -15,7 +15,7 @@ const Home = () => {
           (product) => product)}
       </div>
 
-      Footer
+      <Footer />
     </div>
   );
 
