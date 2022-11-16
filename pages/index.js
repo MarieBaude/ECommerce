@@ -15,7 +15,7 @@ const Home = () => {
           (product) => product)}
       </div>
 
-      <Footer />
+      <FooterBanner />
     </div>
   );
 
