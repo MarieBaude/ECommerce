@@ -1,8 +1,12 @@
 import React from 'react'
 
-function Product() {
+import { urlFor } from '../lib/client';
+
+function Product({ product: { image, name, slug, price }}) {
   return (
-    <div>Product</div>
+    <div>
+
+    </div>
   )
 }
 
