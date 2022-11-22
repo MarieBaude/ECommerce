@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
 
 function FooterBanner() {
   return (
-    <div>FooterBanner</div>
-  )
+    <div className="footer-banner-container">
+      <div className="banner-desc">
+        
+      </div>
+    </div>
+  );
 }
 
-export default FooterBanner
+export default FooterBanner;
