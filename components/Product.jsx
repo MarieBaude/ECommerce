@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { urlFor } from '../lib/client';
-import { Link } from 'next/link';
+import Link from 'next/link';
 
 function Product({ product: { image, name, slug, price }}) {
   return (
