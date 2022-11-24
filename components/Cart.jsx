@@ -36,6 +36,7 @@ function Cart() {
           <span className="cart-num-items">({totalQuantities} items)</span>
         </button>
 
+        {/* CONTENT OF EMPTY */}
         {cartItems.length < 1 && (
           <div className="empty-cart">
             <AiOutlineShopping size={150} />
@@ -52,6 +53,7 @@ function Cart() {
           </div>
         )}
 
+        {/* CONTENT WITH ARTICLE */}
         <div className="product-container">
           {cartItems.length >= 1 && cartItems.map((item) => (
             <div className="product" key={item._id}>
@@ -83,6 +85,21 @@ function Cart() {
             </div>
           ))}
         </div>
+
+        {/* TOTAL PRICE */}
+        {cartItems.length >= 1 && (
+          <div className="cart-bottom">
+            <div className="total">
+              <h3>Subtotal:</h3>
+              <h3>${totalPrice}</h3>
+            </div>
+            <div className="btn-container">
+              <button type="button" className="btn" onClick={handleCheckout}>
+                Pay with Stripe
+              </button>
+            </div>
+          </div>
+        )}
 
       </div>
     </div>
