@@ -1,11 +1,19 @@
 import React from 'react'
+import { client, urlFor } from '../../lib/client'
 
 const ProductDetails = () => {
   return (
     <div>
-        Product
+        <div className='product-detail-container'>
+            <div>
+                <div className='image-container'>
+                    <img src='' />
+                    
+                </div>
+            </div>
+        </div>
     </div>
   )
 }
 
-export default [slug]
+export default ProductDetails
