@@ -14,9 +14,14 @@ const ProductDetails = ({ product, products }) => {
     <div>
       <div className="product-detail-container">
         <div>
+
           <div className="image-container">
-            <img src={urlFor(image && image[0])} />
+            <img src={urlFor(image && image[0])} className="product-detail-image" />
+        
           </div>
+          
+
+          
         </div>
         <div className="product-detail-desc">
           <h1>{name}</h1>
