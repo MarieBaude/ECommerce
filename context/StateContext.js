@@ -10,7 +10,10 @@ export const StateContext = ({ children }) => {
   const [totalQuantities, setTotalQuandtities] = useState(0);
   const [qty, setQty] = useState(1);
 
-  const onAdd = (product, quandtity) => {
+  let foundProduct;
+  let index;
+
+  const onAdd = (product, quantity) => {
     const checkProductInCart = cartItems.find(
       (item) => item._id === product._id
     );
@@ -33,12 +36,16 @@ export const StateContext = ({ children }) => {
       });
       setCartItems(updatedCartItems);
     } else {
-        product.quandtity = quandtity;
+        product.quantity = quantity;
         
         setCartItems([...cartItems, { ...product }]);
     }
     toast.success(`${qty} ${product.name} added to the cart.`)
   };
+
+  const toggleCartItemQuanitity = (id, value) => {
+    foundProduct = cartItems.find((item) => item._id === id)
+  }
 
   const incQty = () => {
     setQty((prevQty) => prevQty + 1);
