@@ -291,6 +291,9 @@ span.text-red {
   align-items: center;
   gap: 10px;
   justify-content: center;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
 }
 .footer-container .icons {
   font-size: 30px;
