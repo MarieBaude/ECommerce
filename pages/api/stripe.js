@@ -15,11 +15,11 @@ export default async function handler(req, res) {
           ],
           line_items: req.body.map((item) => {
             const img = item.image[0].asset._ref;
-            const newImage = img.replace('image-', 'https://cdn.sanity.io/images/vfxfwnaw/production/').replace('-webp', '.webp');
+            const newImage = img.replace('image-', 'https://cdn.sanity.io/images/j8xeaacj/production/').replace('-webp', '.webp');
   
             return {
               price_data: { 
-                currency: 'usd',
+                currency: 'eur',
                 product_data: { 
                   name: item.name,
                   images: [newImage],
