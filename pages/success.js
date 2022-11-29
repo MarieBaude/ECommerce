@@ -6,8 +6,15 @@ import { useStateContext } from '../context/StateContext';
 import { runFireworks } from '../lib/utils';
 
 const Success = () => {
+    const { setCartItems, setTotalPrice, setTotalQuantities } = useStateContext();
+    const [order, setOrder] = useState(null);
+
   return (
-    <div>success</div>
+    <div className="success-wrapper">
+        <div className="success">
+        
+        </div>
+    </div>
   )
 }
 
