@@ -3,6 +3,7 @@ import React from "react";
 
 import { urlFor } from '../lib/client';
 
+
 const HeroBanner = ({ heroBanner }) => {
   return (
     <div className="hero-banner-container">
@@ -21,6 +22,7 @@ const HeroBanner = ({ heroBanner }) => {
             <p>{heroBanner.desc}</p>
           </div>
         </div>
+        
       </div>
     </div>
   );
