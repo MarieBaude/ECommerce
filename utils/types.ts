@@ -1,3 +1,3 @@
-export interface a {
-
+export interface t {
+    
 }
