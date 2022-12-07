@@ -35,6 +35,8 @@ function Cart() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(cartItems),
+    }).then((result) => {
+      return result.json();
     });
 
     if(response.statusCode === 500) return;
