@@ -13,8 +13,6 @@ import { useStateContext } from "../context/StateContext";
 import { urlFor } from "../lib/client";
 import getStripe from '../lib/getStripe';
 
-import * as type from "../utils/types";
-
 function Cart() {
   const cartRef = useRef();
   const {
@@ -40,8 +38,9 @@ function Cart() {
     });
 
     if(response.statusCode === 500) return;
+    console.log('response = ', response);
     
-    const data = await response.json();
+    const data = response;
 
     toast.loading('Redirecting...');
 
