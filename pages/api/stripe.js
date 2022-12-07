@@ -1,6 +1,8 @@
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.NEXT_PUBLIC_STRIPE_SECRET_KEY, {
+  apiVersion: '2022-11-15',
+});
 
 export default async function handler(req, res) {
     if (req.method === 'POST') {
@@ -9,6 +11,8 @@ export default async function handler(req, res) {
           submit_type: 'pay',
           mode: 'payment',
           payment_method_types: ['card'],
+          // Types of property 'billing_address_collection' are incompatible.
+          // Type 'string' is not assignable to type 'BillingAddressCollection'.
           billing_address_collection: 'auto',
           shipping_options: [
             { shipping_rate: 'shr_1M9DyoE3gMhq1XXco1ksTsjo' },
